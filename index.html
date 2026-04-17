@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Profile Card</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <article data-testid="test-profile-card">
+      <div class="profile">
+        <!-- Avatar -->
+        <figure>
+          <img
+            src="./assets/profile-pics.jpg"
+            alt="Portrait photo of the user"
+            data-testid="test-user-avatar"
+          />
+        </figure>
+
+        <!-- Main info -->
+        <div class="meta">
+          <header>
+            <h2 data-testid="test-user-name">
+              Nasirudeen Fahisu O. (NafasHub)
+            </h2>
+          </header>
+
+          <p data-testid="test-user-bio">
+            A curious frontend learner and creative designer who enjoys building
+            clean, accessible interfaces with HTML, CSS, JavaScript, React.js
+            and other frameworks.
+          </p>
+
+          <div
+            class="time"
+            data-testid="test-user-time"
+            aria-live="polite"
+            aria-atomic="true"
+          >
+            <!-- JS injects time -->
+          </div>
+
+          <!-- Social links -->
+          <nav aria-label="Social links">
+            <ul data-testid="test-user-social-links">
+              <li>
+                <a
+                  href="https://twitter.com/Nasirudeen46091"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-twitter"
+                >
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/Faaiz1505"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-github"
+                >
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/fahisu-nasirudeen-7b4376343"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-linkedin"
+                >
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Hobbies -->
+      <section>
+        <h3>Hobbies</h3>
+        <ul data-testid="test-user-hobbies">
+          <li>Coding</li>
+          <li>Designing</li>
+          <li>Watching tech videos</li>
+          <li>Researching</li>
+        </ul>
+      </section>
+
+      <!-- Dislikes -->
+      <section>
+        <h3>Dislikes</h3>
+        <ul data-testid="test-user-dislikes">
+          <li>Messy code</li>
+          <li>Slow Internet</li>
+          <li>Poor accessibility</li>
+        </ul>
+      </section>
+    </article>
+
+    <script src="script.js"></script>
+  </body>
+</html>
